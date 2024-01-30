@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <link rel="stylesheet" href="../css/output.css" />
+    </head>
+    <body class="font-primary antialiased">
+        <!-- Notification -->
+        <div class="bg-black p-2 text-center text-sm text-white">
+            Miễn phí giao hàng cho đơn hàng trên 990.000đ
+        </div>
+
+        <header class="border-b border-slate-200 md:border-none">
+            <div
+                class="container mx-auto flex items-center justify-between py-3"
+            >
+                <div class="flex flex-1 items-center text-sm font-medium">
+                    <div class="relative mr-5">
+                        <button
+                            class="rounded-lg p-1.5 duration-300 hover:bg-slate-900 hover:text-slate-100"
+                        >
+                            <span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    class="h-auto w-5"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+                                    />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="hidden items-center lg:flex">
+                        <button
+                            class="flex items-center gap-x-1 rounded-md px-3 py-2 duration-300 hover:bg-slate-100"
+                        >
+                            <span
+                                ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    class="h-auto w-4 text-blue-500"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                                        clip-rule="evenodd"
+                                    />
+                                </svg>
+                            </span>
+                            <p>1900.69.6900</p>
+                        </button>
+
+                        <button
+                            class="flex items-center gap-x-1 rounded-md px-3 py-2 duration-300 hover:bg-slate-100"
+                        >
+                            <span
+                                ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    class="h-auto w-4 text-blue-500"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12ZM12 8.25a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75Zm0 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+                                        clip-rule="evenodd"
+                                    />
+                                </svg>
+                            </span>
+                            <p>Khiếu nại</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <!-- <a href="#">
+                        <img
+                            src="https://media-api-beta.thinkpro.vn/media/core/site-configs/2023/3/16/logo-thinkpro.svg"
+                            alt="logo"
+                            class="h-auto w-14"
+                        />
+                    </a> -->
+                    <a href="#" class="text-2xl tracking-wider">AlphaWork</a>
+                </div>
+
+                <div class="flex flex-1 items-center justify-end gap-x-0.5">
+                    <button
+                        class="group rounded-full p-2 duration-300 hover:mr-1 hover:bg-slate-900 hover:text-slate-100"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            class="h-auto w-4"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                            />
+                        </svg>
+                    </button>
+
+                    <button
+                        class="group rounded-full p-2 duration-300 hover:mr-1 hover:bg-slate-900 hover:text-slate-100"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            class="h-auto w-4"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                            />
+                        </svg>
+                    </button>
+
+                    <button
+                        class="group rounded-full p-2 duration-300 hover:bg-slate-900 hover:text-slate-100"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            class="h-auto w-4"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                            />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <nav class="hidden border-y border-slate-200 md:block">
+                <ul
+                    class="flex items-center justify-center gap-x-[35px] py-5 text-xs font-bold tracking-wide md:text-sm lg:text-base"
+                >
+                    <li>
+                        <a
+                            class="linkActive relative inline-block duration-200"
+                            href="#"
+                            >Trang chủ</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="link relative inline-block text-red-500 duration-200"
+                            href="#"
+                            >Sale</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="link relative inline-block duration-200"
+                            href="#"
+                            >Laptop</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="link relative inline-block duration-200"
+                            href="#"
+                            >Bàn phím</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="link relative inline-block duration-200"
+                            href="#"
+                            >Chuột</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="link relative inline-block duration-200"
+                            href="#"
+                            >Âm thanh</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="link relative inline-block duration-200"
+                            href="#"
+                            >Phụ kiện Setup</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="container mx-auto py-16">
+            <!-- <div>
+                <p class="text-sm font-light">Categories</p>
+                <h1 class="text-3xl font-bold uppercase tracking-widest">
+                    Danh mục sản phẩm
+                </h1>
+            </div> -->
+
+            <div class="grid grid-cols-2 gap-[1rem] lg:grid-cols-5">
+                <a
+                    href="#"
+                    class="group relative flex aspect-1 flex-col justify-end overflow-hidden rounded-lg font-bold text-white"
+                >
+                    <img
+                        src="../assets/images/laptop.webp"
+                        alt="laptop"
+                        class="absolute duration-500 group-hover:scale-110"
+                    />
+
+                    <div class="gradientCard relative">
+                        <div class="flex items-center justify-between p-5">
+                            <p>Laptop</p>
+                            <button
+                                class="rounded-full bg-white p-1.5 text-black opacity-0 duration-500 group-hover:opacity-100"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="4"
+                                    stroke="currentColor"
+                                    class="h-auto w-2"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a
+                    href="#"
+                    class="group relative flex aspect-1 flex-col justify-end overflow-hidden rounded-lg font-bold text-white"
+                >
+                    <img
+                        src="../assets/images/keyboard.webp"
+                        alt="keyboard"
+                        class="absolute duration-500 group-hover:scale-110"
+                    />
+
+                    <div class="gradientCard relative">
+                        <div class="flex items-center justify-between p-5">
+                            <p>Bàn phím</p>
+                            <button
+                                class="rounded-full bg-white p-1.5 text-black opacity-0 duration-500 group-hover:opacity-100"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="4"
+                                    stroke="currentColor"
+                                    class="h-auto w-2"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a
+                    href="#"
+                    class="group relative flex aspect-1 flex-col justify-end overflow-hidden rounded-lg font-bold text-white"
+                >
+                    <img
+                        src="../assets/images/mouse.webp"
+                        alt="mouse"
+                        class="absolute duration-500 group-hover:scale-110"
+                    />
+
+                    <div class="gradientCard relative">
+                        <div class="flex items-center justify-between p-5">
+                            <p>Mouse</p>
+                            <button
+                                class="rounded-full bg-white p-1.5 text-black opacity-0 duration-500 group-hover:opacity-100"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="4"
+                                    stroke="currentColor"
+                                    class="h-auto w-2"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a
+                    href="#"
+                    class="group relative flex aspect-1 flex-col justify-end overflow-hidden rounded-lg font-bold text-white"
+                >
+                    <img
+                        src="../assets/images/sound.webp"
+                        alt="sound"
+                        class="absolute duration-500 group-hover:scale-110"
+                    />
+
+                    <div class="gradientCard relative">
+                        <div class="flex items-center justify-between p-5">
+                            <p>Âm thanh</p>
+                            <button
+                                class="rounded-full bg-white p-1.5 text-black opacity-0 duration-500 group-hover:opacity-100"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="4"
+                                    stroke="currentColor"
+                                    class="h-auto w-2"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a
+                    href="#"
+                    class="group relative flex aspect-1 flex-col justify-end overflow-hidden rounded-lg font-bold text-white"
+                >
+                    <img
+                        src="../assets/images/setup-accessories.webp"
+                        alt="setup-accessories"
+                        class="absolute bg-no-repeat object-cover duration-500 group-hover:scale-110"
+                    />
+
+                    <div class="gradientCard relative">
+                        <div class="flex items-center justify-between p-5">
+                            <p>Phụ kiện Setup</p>
+                            <button
+                                class="rounded-full bg-white p-1.5 text-black opacity-0 duration-500 group-hover:opacity-100"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="4"
+                                    stroke="currentColor"
+                                    class="h-auto w-2"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="space-y-10">
+            <div class="space-y-2 md:space-y-5">
+                <h1
+                    class="text-center text-4xl font-bold tracking-widest md:text-5xl"
+                >
+                    SẢN PHẨM NỔI BẬT
+                </h1>
+                <p
+                    class="mx-auto max-w-sm text-center text-sm font-normal tracking-wider text-black/70 md:max-w-lg md:text-base"
+                >
+                    Lần đầu tiên AlphaWork đánh dấu sự phát triển vượt trội về
+                    công nghệ cũng như trải nghiệm người dùng.
+                </p>
+            </div>
+
+            <div class="bg-black/90 py-10">
+                <!-- Products Feature -->
+                <div
+                    class="container mx-auto grid grid-cols-1 gap-[30px] md:grid-cols-2 lg:grid-cols-3"
+                >
+                    <!-- Product 01 -->
+                    <div class="space-y-5 text-center">
+                        <!-- Images -->
+                        <div
+                            class="relative flex h-[330px] flex-col justify-end overflow-hidden"
+                        >
+                            <img
+                                src="../assets/images/products/bang-treo-do-pegboard-hyperwork-pg01d.webp"
+                                alt="product-1"
+                                class="absolute h-full w-full bg-slate-200 bg-no-repeat object-cover duration-1000 hover:scale-125"
+                            />
+                            <div
+                                class="gradientCard relative flex items-end justify-between p-5 text-white"
+                            >
+                                <div
+                                    class="rounded-md bg-white/30 px-3 py-1 text-sm text-white backdrop-blur-lg"
+                                >
+                                    Phụ kiện Setup
+                                </div>
+                                <div class="text-3xl font-bold drop-shadow-xl">
+                                    290.000<span>đ</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Informations product -->
+                        <div class="space-y-4 text-white">
+                            <div class="space-y-2">
+                                <div class="mx-auto max-w-[350px]">
+                                    <a
+                                        href="#"
+                                        class="hover:underline-offset-3 text-2xl font-bold tracking-wide hover:underline"
+                                    >
+                                        Bảng treo đồ Pegboard HyperWork PG01D
+                                    </a>
+                                </div>
+                                <div>
+                                    <p class="text-xl line-through">
+                                        499.000<span>đ</span>
+                                    </p>
+                                    <p class="tracking-wide">
+                                        Tiết kiệm 209.000<span>đ</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="font-bold">
+                                <a
+                                    class="link relative inline-block before:m-0 before:bg-white"
+                                    href="#"
+                                    >Mua ngay</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 02 -->
+                    <div class="space-y-5 text-center">
+                        <!-- Images -->
+                        <div
+                            class="relative flex h-[330px] flex-col justify-end overflow-hidden"
+                        >
+                            <img
+                                src="../assets/images/products/ban-phim-khong-day-hyperwork-hyperone-gen-2.webp"
+                                alt="product-1"
+                                class="absolute h-full w-full bg-slate-200 bg-no-repeat object-cover duration-1000 hover:scale-125"
+                            />
+                            <div
+                                class="gradientCard relative flex items-end justify-between p-5 text-white"
+                            >
+                                <div
+                                    class="rounded-md bg-white/30 px-3 py-1 text-sm text-white backdrop-blur-lg"
+                                >
+                                    Bàn phím
+                                </div>
+                                <div class="text-3xl font-bold drop-shadow-xl">
+                                    750.000<span>đ</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Informations product -->
+                        <div class="space-y-4 text-white">
+                            <div class="space-y-2">
+                                <div class="mx-auto max-w-[350px]">
+                                    <a
+                                        href="#"
+                                        class="hover:underline-offset-3 text-2xl font-bold tracking-wide hover:underline"
+                                    >
+                                        Bàn phím không dây HyperWork HyperOne
+                                        Gen 2
+                                    </a>
+                                </div>
+                                <div>
+                                    <p class="text-xl line-through">
+                                        900.000<span>đ</span>
+                                    </p>
+                                    <p class="tracking-wide">
+                                        Tiết kiệm 150.000<span>đ</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="font-bold">
+                                <a
+                                    class="link relative inline-block before:m-0 before:bg-white"
+                                    href="#"
+                                    >Mua ngay</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 03 -->
+                    <div class="space-y-5 text-center">
+                        <!-- Images -->
+                        <div
+                            class="relative flex h-[330px] flex-col justify-end overflow-hidden"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1651614422777-d92444842a65?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="product-1"
+                                class="absolute h-full w-full bg-slate-200 bg-no-repeat object-cover duration-1000 hover:scale-125"
+                            />
+                            <div
+                                class="gradientCard relative flex items-end justify-between p-5 text-white"
+                            >
+                                <div
+                                    class="rounded-md bg-white/30 px-3 py-1 text-sm text-white backdrop-blur-lg"
+                                >
+                                    Laptop
+                                </div>
+                                <div class="text-3xl font-bold drop-shadow-xl">
+                                    43.590.000<span>đ</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4 text-white">
+                            <div class="space-y-2">
+                                <div class="mx-auto max-w-[350px]">
+                                    <a
+                                        href="#"
+                                        class="hover:underline-offset-3 text-2xl font-bold tracking-wide hover:underline"
+                                    >
+                                        Macbook Pro 14 M1 Pro | 10 CPU - 16 GPU
+                                        16GB 1TB 2021
+                                    </a>
+                                </div>
+                                <div>
+                                    <p class="text-xl line-through">
+                                        52.990.000<span>đ</span>
+                                    </p>
+                                    <p class="tracking-wide">
+                                        Tiết kiệm 9.400.000<span>đ</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="font-bold">
+                                <a
+                                    class="link relative inline-block before:m-0 before:bg-white"
+                                    href="#"
+                                    >Mua ngay</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-8 pt-16">
+            <div class="space-y-2">
+                <h1
+                    class="text-center text-4xl font-bold tracking-wide md:text-5xl"
+                >
+                    Bài viết mới nhất
+                </h1>
+                <p class="text-center text-sm text-black/70 md:text-base">
+                    Một thế giới đầy cảm hứng.
+                </p>
+            </div>
+
+            <div
+                class="container mx-auto grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3"
+            >
+                <!-- Post 01 -->
+                <div>
+                    <a href="#" class="space-y-7">
+                        <!-- Images post -->
+                        <div
+                            class="aspect-h-9 aspect-w-16 relative overflow-hidden rounded-lg"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1639413665566-2f75adf7b7ca?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="tips-and-tricks"
+                                class="absolute bg-slate-300 object-cover duration-500 hover:scale-110"
+                            />
+                        </div>
+
+                        <div class="space-y-5">
+                            <div class="space-y-2">
+                                <!-- Category post -->
+                                <h2
+                                    class="text-xs uppercase text-green-800 md:text-sm"
+                                >
+                                    Tips & Tricks
+                                </h2>
+                                <!-- Title post -->
+                                <h1
+                                    class="text-2xl font-bold duration-200 hover:text-blue-600 md:leading-7"
+                                >
+                                    Setup góc làm việc: Làm thế nào để thỏa mãn
+                                    đủ 5 giác quan?
+                                </h1>
+                            </div>
+                            <!-- Day post -->
+                            <div class="flex items-center gap-x-3">
+                                <div>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="2"
+                                        stroke="currentColor"
+                                        class="h-auto w-4"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                                        />
+                                    </svg>
+                                </div>
+
+                                <p class="text-xs text-black/70 md:text-sm">
+                                    31/01/2024
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Post 02 -->
+                <div>
+                    <a href="#" class="space-y-7">
+                        <!-- Images post -->
+                        <div
+                            class="aspect-h-9 aspect-w-16 relative overflow-hidden rounded-lg"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1664474234825-63b7e8987982?q=80&w=2803&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="tips-and-tricks"
+                                class="absolute bg-slate-300 object-cover duration-500 hover:scale-110"
+                            />
+                        </div>
+
+                        <div class="space-y-5">
+                            <div class="space-y-2">
+                                <!-- Category post -->
+                                <h2
+                                    class="text-xs uppercase text-green-800 md:text-sm"
+                                >
+                                    Tips & Tricks
+                                </h2>
+                                <!-- Title post -->
+                                <h1
+                                    class="text-2xl font-bold duration-200 hover:text-blue-600 md:leading-7"
+                                >
+                                    Top gaming gear khiến game thủ sẵn lòng đầu
+                                    tư
+                                </h1>
+                            </div>
+                            <!-- Day post -->
+                            <div class="flex items-center gap-x-3">
+                                <div>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="2"
+                                        stroke="currentColor"
+                                        class="h-auto w-4"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                                        />
+                                    </svg>
+                                </div>
+
+                                <p class="text-xs text-black/70 md:text-sm">
+                                    10/01/2024
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Post 03 -->
+                <div>
+                    <a href="#" class="space-y-7">
+                        <!-- Images post -->
+                        <div
+                            class="aspect-h-9 aspect-w-16 relative overflow-hidden rounded-lg"
+                        >
+                            <img
+                                src="https://hyperwork.vn/cdn/shop/articles/rsz_studious-asian-woman-working-home-using-laptop_copy.webp?v=1705046483&width=1400"
+                                alt="tips-and-tricks"
+                                class="absolute bg-slate-300 object-cover duration-500 hover:scale-110"
+                            />
+                        </div>
+
+                        <div class="space-y-5">
+                            <div class="space-y-2">
+                                <!-- Category post -->
+                                <h2
+                                    class="text-xs uppercase text-green-800 md:text-sm"
+                                >
+                                    Tips & Tricks
+                                </h2>
+                                <!-- Title post -->
+                                <h1
+                                    class="text-2xl font-bold duration-200 hover:text-blue-600 md:leading-7"
+                                >
+                                    Đừng để thói quen xấu khi làm việc gây nên
+                                    "bệnh văn phòng"
+                                </h1>
+                            </div>
+                            <!-- Day post -->
+                            <div class="flex items-center gap-x-3">
+                                <div>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="2"
+                                        stroke="currentColor"
+                                        class="h-auto w-4"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                                        />
+                                    </svg>
+                                </div>
+
+                                <p class="text-xs text-black/70 md:text-sm">
+                                    25/01/2024
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-16">
+            <div class="container mx-auto border-y border-slate-200">
+                <div class="flex items-center justify-between gap-x-3 py-10">
+                    <!-- 01 -->
+                    <div class="flex items-center gap-x-5">
+                        <div>
+                            <svg
+                                width="46"
+                                height="34"
+                                viewBox="0 0 46 34"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M37.0335 10.9902H34.1794L35.0394 1.05879C35.0409 1.0408 35.0412 1.02308 35.0413 1.00535C35.0413 1.00384 35.0415 1.00241 35.0415 1.0009C35.0415 1.00063 35.0415 1.00045 35.0415 1.00019C35.0415 0.729877 34.8794 0.491631 34.6411 0.38805C34.6391 0.387159 34.6371 0.38609 34.6351 0.3852C34.6203 0.378965 34.605 0.373621 34.5896 0.368455C34.5838 0.366585 34.5783 0.364269 34.5726 0.362488C34.56 0.358658 34.5471 0.35563 34.5342 0.352513C34.5252 0.350375 34.5165 0.347793 34.5074 0.346011C34.4961 0.343785 34.4845 0.34236 34.4729 0.340668C34.4621 0.339065 34.4515 0.337194 34.4406 0.336214C34.4388 0.336036 34.4371 0.33568 34.4352 0.335502C34.4235 0.334433 34.412 0.334611 34.4004 0.334166C34.3926 0.333898 34.385 0.333008 34.3772 0.333008H34.3689C34.3682 0.333008 34.3675 0.333008 34.3669 0.333008H20.7871C20.4205 0.333008 20.123 0.632263 20.123 1.00099C20.123 1.36882 20.4205 1.66897 20.7871 1.66897H33.6534L32.3318 16.9323C32.3316 16.9335 32.3316 16.9346 32.3315 16.9358L31.998 20.787H8.92318L9.30913 16.7793H13.7027C14.0695 16.7793 14.3667 16.4802 14.3667 16.1113C14.3667 15.7424 14.0695 15.4433 13.7027 15.4433H9.43787L10.2528 6.9827H17.2454C17.6122 6.9827 17.9095 6.68362 17.9095 6.31472C17.9095 5.94582 17.6122 5.64674 17.2454 5.64674H10.3816L10.7648 1.66897H18.1308C18.4965 1.66897 18.7949 1.36882 18.7949 1.00099C18.7949 0.632263 18.4965 0.333008 18.1308 0.333008H10.1621C10.1617 0.333008 10.1614 0.333097 10.1611 0.333097C9.84915 0.333008 9.57856 0.553887 9.51313 0.860089C9.51269 0.862315 9.51189 0.864453 9.51145 0.866679C9.50809 0.883334 9.50587 0.900345 9.50366 0.917446C9.50304 0.922879 9.50189 0.928044 9.50136 0.933477C9.50127 0.934546 9.501 0.935525 9.50091 0.936594L9.04722 5.64674H0.997073C0.630243 5.64674 0.333008 5.94582 0.333008 6.31472C0.333008 6.68362 0.630243 6.9827 0.997073 6.9827H8.91848L8.10354 15.4433H5.73425C5.36742 15.4433 5.07018 15.7424 5.07018 16.1113C5.07018 16.4802 5.36742 16.7793 5.73425 16.7793H7.97489L7.53112 21.3858C7.53103 21.3865 7.53103 21.3872 7.53094 21.3878L6.84483 28.5111C6.84474 28.5119 6.84465 28.5127 6.84456 28.5135L6.8443 28.516C6.84341 28.5253 6.8435 28.5344 6.84297 28.5437C6.84235 28.5559 6.84111 28.568 6.84111 28.5804C6.84111 28.581 6.8412 28.5815 6.8412 28.5821C6.8412 28.5993 6.84244 28.6162 6.84368 28.6332C6.84421 28.6386 6.84403 28.6441 6.84465 28.6495C6.84642 28.6667 6.84935 28.6837 6.85244 28.7007C6.85333 28.7057 6.85377 28.7107 6.85475 28.7156C6.85731 28.7285 6.86094 28.7408 6.86431 28.7534C6.86661 28.7622 6.86847 28.7712 6.87113 28.7798C6.87192 28.7823 6.87299 28.7846 6.8737 28.7871C6.90584 28.8865 6.96038 28.9757 7.03157 29.0486C7.03289 29.0499 7.03396 29.0514 7.03528 29.0527C7.04237 29.0598 7.05007 29.0662 7.05751 29.073C7.10328 29.1152 7.15499 29.151 7.21157 29.179C7.22335 29.1849 7.23495 29.1911 7.24699 29.1961C7.25062 29.1977 7.25451 29.1988 7.25823 29.2002C7.27488 29.2069 7.29161 29.2133 7.30888 29.2188C7.31047 29.2192 7.31198 29.2195 7.31357 29.22C7.33323 29.2259 7.35306 29.231 7.37334 29.2352C7.37599 29.2358 7.37874 29.2359 7.38131 29.2365C7.40061 29.2401 7.42 29.2432 7.43974 29.2452C7.44019 29.2452 7.44054 29.2453 7.44098 29.2454C7.46276 29.2475 7.48437 29.2486 7.5058 29.2486C7.50606 29.2486 7.50642 29.2485 7.50677 29.2485H10.463C10.7895 31.7381 12.9114 33.6663 15.4742 33.6663C18.0369 33.6663 20.1588 31.7381 20.4853 29.2485H31.1368C31.4633 31.7381 33.5851 33.6663 36.1479 33.6663C38.7106 33.6663 40.8327 31.7381 41.1592 29.2485H44.1161C44.1166 29.2485 44.1171 29.2486 44.1176 29.2486C44.1397 29.2486 44.1615 29.2473 44.1831 29.2451C44.187 29.2448 44.1907 29.244 44.1946 29.2435C44.2119 29.2415 44.229 29.2391 44.2459 29.2357C44.2531 29.2343 44.2601 29.2323 44.2673 29.2306C44.2803 29.2276 44.2934 29.2244 44.3062 29.2205C44.3148 29.218 44.3232 29.2149 44.3317 29.212C44.3426 29.2082 44.3535 29.2043 44.3642 29.2C44.3735 29.1963 44.3822 29.1923 44.3912 29.1883C44.4009 29.1838 44.4106 29.1791 44.4201 29.1742C44.4291 29.1696 44.4378 29.1648 44.4465 29.1598C44.4556 29.1545 44.4646 29.1489 44.4736 29.1432C44.4819 29.1379 44.4902 29.1325 44.4982 29.1268C44.5072 29.1204 44.5158 29.1137 44.5246 29.107C44.5319 29.1012 44.5392 29.0955 44.5463 29.0894C44.5554 29.0817 44.564 29.0736 44.5727 29.0653C44.5787 29.0595 44.585 29.0538 44.5908 29.0478C44.6 29.0383 44.6088 29.0283 44.6176 29.0183C44.6223 29.0128 44.6271 29.0076 44.6316 29.0021C44.6414 28.99 44.6502 28.9775 44.6591 28.9649C44.6621 28.9606 44.6655 28.9565 44.6684 28.952C44.6792 28.9357 44.6894 28.919 44.6988 28.9017C44.6995 28.9006 44.7002 28.8996 44.7006 28.8985C44.7106 28.88 44.7198 28.861 44.7281 28.8414C44.7304 28.8358 44.7321 28.83 44.7343 28.8244C44.7397 28.8106 44.7451 28.7968 44.7496 28.7824C44.7525 28.7732 44.7546 28.7636 44.7572 28.7543C44.7601 28.7432 44.7632 28.7321 44.7657 28.7208C44.7679 28.7107 44.7693 28.7004 44.771 28.6902C44.7725 28.6812 44.7745 28.6723 44.7756 28.6632C44.8038 28.4362 45.3238 24.2396 45.556 21.526C45.5563 21.5235 45.5564 21.5208 45.5566 21.5182C45.6235 20.736 45.6663 20.0772 45.6663 19.674C45.6663 14.8858 41.7937 10.9902 37.0335 10.9902ZM34.0637 12.3264H36.7804L36.4334 16.3339H33.7167L34.0637 12.3264ZM15.4744 32.3303C13.4187 32.3303 11.7463 30.6481 11.7463 28.5803C11.7463 26.5126 13.4188 24.8304 15.4744 24.8304C17.53 24.8304 19.2024 26.5126 19.2024 28.5803C19.2024 30.6481 17.53 32.3303 15.4744 32.3303ZM36.1479 32.3303C34.0923 32.3303 32.42 30.6481 32.42 28.5803C32.42 26.5126 34.0924 24.8304 36.1479 24.8304C38.2036 24.8304 39.876 26.5126 39.876 28.5803C39.876 30.6481 38.2036 32.3303 36.1479 32.3303ZM43.5294 27.9121H41.1594C40.833 25.4223 38.711 23.494 36.1481 23.494C33.5853 23.494 31.4633 25.4224 31.137 27.9121H20.4855C20.1592 25.4223 18.0372 23.494 15.4744 23.494C12.9116 23.494 10.7895 25.4224 10.4631 27.9121H8.2368L8.79453 22.1226H32.6066V22.1229C32.6069 22.1229 32.6072 22.1229 32.6075 22.1229C32.6298 22.1229 32.6518 22.1217 32.6736 22.1195C32.6777 22.1191 32.6817 22.1182 32.6857 22.1177C32.7031 22.1156 32.7203 22.1131 32.7373 22.1098C32.7447 22.1082 32.7519 22.1062 32.7591 22.1044C32.7724 22.1012 32.7857 22.0981 32.7986 22.0942C32.8075 22.0915 32.8159 22.0883 32.8245 22.0853C32.8356 22.0814 32.8468 22.0775 32.8576 22.0731C32.8669 22.0692 32.8758 22.065 32.8849 22.0607C32.8947 22.0561 32.9045 22.0516 32.914 22.0466C32.923 22.0418 32.9319 22.0366 32.9408 22.0315C32.9499 22.0261 32.959 22.0207 32.9678 22.015C32.9764 22.0094 32.9846 22.0035 32.9928 21.9976C33.0016 21.9914 33.0101 21.985 33.0186 21.9783C33.0262 21.9722 33.0337 21.9658 33.0411 21.9593C33.0495 21.952 33.0578 21.9445 33.0658 21.9368C33.0725 21.9303 33.0792 21.9236 33.0858 21.9168C33.0937 21.9084 33.1014 21.8997 33.109 21.8909C33.115 21.884 33.1208 21.877 33.1265 21.8699C33.1338 21.8606 33.1408 21.8509 33.1477 21.8412C33.153 21.8339 33.158 21.8266 33.163 21.8191C33.1694 21.8091 33.1756 21.7987 33.1816 21.7882C33.1861 21.7804 33.1907 21.7726 33.1948 21.7645C33.2003 21.754 33.2051 21.7434 33.2102 21.7326C33.2141 21.7239 33.218 21.7155 33.2216 21.7066C33.2259 21.6961 33.2296 21.6853 33.2334 21.6745C33.2366 21.665 33.2401 21.6554 33.243 21.6456C33.2459 21.6353 33.2483 21.6247 33.251 21.6142C33.2536 21.6036 33.2564 21.5931 33.2584 21.5823C33.2605 21.5718 33.2617 21.5611 33.2633 21.5504C33.2649 21.5394 33.2667 21.5285 33.2678 21.5173C33.268 21.5157 33.2683 21.5142 33.2684 21.5126L33.6013 17.6695H37.0333C39.0679 17.6695 39.9856 18.7299 40.957 19.8526C41.7585 20.779 42.6534 21.8126 44.1746 22.0647C43.9814 24.1194 43.6691 26.7571 43.5294 27.9121ZM44.2881 20.7261C43.3013 20.5237 42.6942 19.8259 41.9586 18.9759C41.0388 17.9129 39.9158 16.6157 37.7631 16.374L38.1066 12.4063C41.6274 12.9301 44.3382 15.9893 44.3382 19.6741C44.3382 19.9245 44.3196 20.2882 44.2881 20.7261Z"
+                                    fill="#121212"
+                                    stroke="#121212"
+                                    stroke-width="0.3"
+                                />
+                                <path
+                                    d="M13.5391 28.5801C13.5391 27.5029 14.4103 26.6309 15.474 26.6309C16.5376 26.6309 17.4089 27.503 17.4089 28.5801C17.4089 29.6573 16.5376 30.5294 15.474 30.5294C14.4103 30.5294 13.5391 29.6573 13.5391 28.5801ZM13.8672 28.5801C13.8672 29.4674 14.5847 30.1934 15.474 30.1934C16.3631 30.1934 17.0807 29.4674 17.0807 28.5801C17.0807 27.6928 16.3632 26.9668 15.474 26.9668C14.5847 26.9668 13.8672 27.6928 13.8672 28.5801Z"
+                                    fill="#121212"
+                                    stroke="#121212"
+                                />
+                                <path
+                                    d="M34.2129 28.5801C34.2129 27.5029 35.0841 26.6309 36.1478 26.6309C37.2115 26.6309 38.0827 27.503 38.0827 28.5801C38.0827 29.6573 37.2115 30.5294 36.1478 30.5294C35.0841 30.5294 34.2129 29.6573 34.2129 28.5801ZM34.541 28.5801C34.541 29.4674 35.2586 30.1934 36.1478 30.1934C37.037 30.1934 37.7546 29.4674 37.7546 28.5801C37.7546 27.6928 37.037 26.9668 36.1478 26.9668C35.2586 26.9668 34.541 27.6928 34.541 28.5801Z"
+                                    fill="#121212"
+                                    stroke="#121212"
+                                />
+                                <path
+                                    d="M6.61953 10.9902H3.37305C3.00622 10.9902 2.70898 11.2893 2.70898 11.6582C2.70898 12.0271 3.00622 12.3262 3.37305 12.3262H6.61953C6.98636 12.3262 7.28359 12.0271 7.28359 11.6582C7.28359 11.2893 6.98636 10.9902 6.61953 10.9902Z"
+                                    fill="#121212"
+                                    stroke="#121212"
+                                    stroke-width="0.3"
+                                />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold md:text-base">
+                                Miễn phí ship
+                            </p>
+                            <p class="text-xs text-black/70 md:text-sm">
+                                Cho đơn hàng trên 990.000đ
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 02 -->
+                    <div class="flex items-center gap-x-5">
+                        <div>
+                            <svg
+                                width="46"
+                                height="46"
+                                viewBox="0 0 46 46"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M45.1168 25.5758C44.8635 24.6583 44.6251 23.791 44.6251 22.9997C44.6251 22.2083 44.8635 21.3411 45.1168 20.4236C45.5198 18.963 45.9357 17.4523 45.438 15.9838C44.9217 14.4563 43.6347 13.458 42.3901 12.4942C41.6441 11.9157 40.9395 11.3697 40.4823 10.7685C40.0172 10.1556 39.688 9.33759 39.3412 8.47133C38.7686 7.04825 38.1774 5.57591 36.853 4.6515C35.5502 3.74089 33.9243 3.65318 32.3545 3.56941C31.375 3.51718 30.4487 3.46692 29.6731 3.22547C28.9479 2.99979 28.197 2.53167 27.4027 2.03596C26.1246 1.2377 24.675 0.333008 22.9988 0.333008C21.3226 0.333008 19.873 1.2377 18.5949 2.03695C17.8007 2.53266 17.0517 3.00176 16.3255 3.22646C15.549 3.46791 14.6227 3.51817 13.6431 3.5704C12.0724 3.65515 10.4484 3.74188 9.14466 4.65249C7.82024 5.57689 7.22898 7.04825 6.65645 8.47133C6.30761 9.33759 5.97847 10.1565 5.51335 10.7695C5.05611 11.3727 4.35153 11.9186 3.60556 12.4981C2.36195 13.4629 1.07695 14.4593 0.560582 15.9848C0.0629397 17.4542 0.478791 18.964 0.880846 20.4255C1.1341 21.343 1.37258 22.2093 1.37258 23.0007C1.37258 23.792 1.1341 24.6593 0.880846 25.5768C0.478791 27.0373 0.0629397 28.5481 0.560582 30.0185C1.07695 31.544 2.36293 32.5423 3.60654 33.5062C4.35252 34.0837 5.0571 34.6306 5.51335 35.2318C5.97946 35.8448 6.30859 36.6627 6.65645 37.53C7.22898 38.9531 7.82123 40.4254 9.14663 41.3518C10.4484 42.2604 12.0734 42.3471 13.6431 42.4309C14.6227 42.4832 15.549 42.5334 16.3245 42.7749C17.0498 43.0005 17.7997 43.4687 18.593 43.9634C19.872 44.7607 21.3216 45.6663 22.9988 45.6663C24.676 45.6663 26.1266 44.7607 27.4066 43.9624C28.1999 43.4677 28.9488 42.9996 29.6751 42.7739C30.4506 42.5324 31.3769 42.4822 32.3565 42.4299C33.9272 42.3462 35.5512 42.2594 36.853 41.3508C38.1803 40.4244 38.7716 38.9501 39.3441 37.526C39.692 36.6608 40.0201 35.8428 40.4833 35.2318C40.9405 34.6306 41.6451 34.0837 42.3911 33.5062C43.6357 32.5414 44.9217 31.544 45.439 30.0175C45.9367 28.5471 45.5198 27.0373 45.1168 25.5758ZM43.5715 29.3858C43.2453 30.3496 42.2431 31.1262 41.1828 31.9481C40.3698 32.5788 39.5283 33.2312 38.9134 34.0393C38.2896 34.8632 37.8954 35.8428 37.5141 36.7918C37.0283 38.002 36.569 39.1443 35.7245 39.7336C34.883 40.3209 33.6049 40.3889 32.2509 40.4609C31.1935 40.5171 30.0987 40.5752 29.0877 40.8906C28.121 41.1931 27.2262 41.7499 26.362 42.29C25.2041 43.0134 24.1112 43.6953 22.9987 43.6953C21.8861 43.6953 20.7943 43.0134 19.6364 42.29C18.7732 41.7509 17.8794 41.1931 16.9117 40.8906C15.9006 40.5762 14.8058 40.5171 13.7485 40.4609C12.3945 40.3889 11.1154 40.32 10.2748 39.7336C9.4313 39.1443 8.9711 38.002 8.48528 36.7928C8.10392 35.8438 7.70877 34.8632 7.084 34.0393C6.47008 33.2312 5.62852 32.5788 4.81456 31.9471C3.75522 31.1252 2.75402 30.3496 2.42785 29.3858C2.12335 28.488 2.44361 27.327 2.78162 26.0991C3.05754 25.0949 3.34331 24.0581 3.34331 22.9987C3.34331 21.9393 3.05754 20.9035 2.78162 19.8993C2.44263 18.6713 2.12335 17.5114 2.42785 16.6136C2.75402 15.6498 3.75424 14.8742 4.81357 14.0523C5.62754 13.4205 6.47008 12.7672 7.08302 11.9581C7.70975 11.1342 8.10392 10.1526 8.48627 9.20356C8.9711 7.99434 9.43031 6.85312 10.2729 6.26576C11.1144 5.67741 12.3945 5.60941 13.7494 5.53747C14.8058 5.48031 15.9006 5.42217 16.9107 5.1068C17.8794 4.80524 18.7742 4.24646 19.6394 3.7064C20.7953 2.98599 21.8871 2.30402 22.9987 2.30402C24.1103 2.30402 25.2031 2.98599 26.36 3.70837C27.2252 4.24941 28.119 4.80721 29.0877 5.10878C30.0977 5.42315 31.1916 5.4813 32.2489 5.53846C33.6039 5.6104 34.883 5.68037 35.7245 6.26773C36.5681 6.85707 37.0273 7.99828 37.5121 9.20553C37.8944 10.1556 38.2876 11.1361 38.9144 11.96C39.5283 12.7681 40.3698 13.4205 41.1828 14.0513C42.2431 14.8742 43.2453 15.6507 43.5715 16.6165C43.876 17.5124 43.5548 18.6723 43.2168 19.9003C42.9398 20.9045 42.6541 21.9412 42.6541 23.0007C42.6541 24.0601 42.9389 25.0968 43.2168 26.1001C43.5559 27.328 43.876 28.488 43.5715 29.3858Z"
+                                    fill="#121212"
+                                />
+                                <path
+                                    d="M22.9992 8.2168C14.8487 8.2168 8.21777 14.8483 8.21777 22.9994C8.21777 31.1505 14.8487 37.782 22.9992 37.782C31.1497 37.782 37.7807 31.1505 37.7807 22.9994C37.7807 14.8483 31.1497 8.2168 22.9992 8.2168ZM22.9992 35.811C15.9357 35.811 10.1886 30.0635 10.1886 22.9994C10.1886 15.9353 15.9357 10.1878 22.9992 10.1878C26.6424 10.1878 29.9268 11.7242 32.2623 14.1742L22.8711 27.3908L17.7833 22.3027C17.398 21.9173 16.7752 21.9173 16.3899 22.3027C16.0046 22.688 16.0046 23.3108 16.3899 23.6962L22.3025 29.6092C22.4878 29.7955 22.7391 29.898 22.9992 29.898C23.0258 29.898 23.0544 29.897 23.082 29.894C23.3707 29.8704 23.6348 29.7196 23.8023 29.4831L33.5551 15.7569C34.9742 17.8186 35.8098 20.3119 35.8098 22.9994C35.8098 30.0635 30.0628 35.811 22.9992 35.811Z"
+                                    fill="#121212"
+                                />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold md:text-base">
+                                Đổi trả/Hoàn tiền nhanh chóng
+                            </p>
+                            <p class="text-xs text-black/70 md:text-sm">
+                                Bảo đảm quyền lợi cho khách hàng
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 03 -->
+                    <div class="flex items-center gap-x-5">
+                        <div>
+                            <svg
+                                width="46"
+                                height="41"
+                                viewBox="0 0 46 41"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M42.5524 1H27.8071C27.4753 1 27.2065 1.26692 27.2065 1.59634C27.2065 1.92577 27.4753 2.19269 27.8071 2.19269H42.5524C43.4598 2.19269 44.198 2.92572 44.198 3.82667V19.183C44.198 20.084 43.4598 20.817 42.5524 20.817H40.1972C40.0707 20.817 39.9473 20.8567 39.8449 20.9304L35.7495 23.8756V21.4134C35.7495 21.0839 35.4807 20.817 35.1489 20.817H22.1125C21.205 20.817 20.4668 20.084 20.4668 19.183V3.82667C20.4668 2.92572 21.2051 2.19269 22.1125 2.19269H25.19C25.5218 2.19269 25.7906 1.92577 25.7906 1.59634C25.7906 1.26692 25.5218 1 25.19 1H22.1125C20.5427 1 19.2656 2.26799 19.2656 3.82667V19.183C19.2656 20.7417 20.5428 22.0097 22.1125 22.0097H34.5483V25.0439C34.5483 25.268 34.6748 25.4731 34.8758 25.575C35.0888 25.6759 35.2973 25.6598 35.5012 25.5269L40.3919 22.0098H42.5524C44.1222 22.0098 45.3992 20.7418 45.3992 19.1831V3.82667C45.3992 2.26807 44.1221 1 42.5524 1Z"
+                                    fill="#121212"
+                                    stroke="#121212"
+                                    stroke-width="0.4"
+                                />
+                                <path
+                                    d="M38.7127 33.5499C38.5758 32.5719 38.0002 31.7404 37.1316 31.2671L34.2134 29.6772C33.8952 29.5035 33.4966 29.6211 33.3232 29.9396C33.15 30.2578 33.2674 30.6564 33.5857 30.8297L36.5035 32.4195C37.0028 32.6915 37.3336 33.169 37.4127 33.7307C37.4132 33.7342 37.4136 33.7378 37.4141 33.7413C37.4907 34.3087 37.2976 34.8621 36.8846 35.2591L36.4545 35.6721L25.6814 29.6103L26.9474 28.4966C27.4875 28.0214 28.2738 27.9337 28.9046 28.2782L30.7254 29.2705C31.0436 29.4438 31.4421 29.3266 31.6156 29.0083C31.789 28.6901 31.6717 28.2915 31.3534 28.118L29.533 27.126C28.4206 26.5186 27.033 26.6732 26.0807 27.5111L23.1302 30.1063C22.5259 30.6378 21.6438 30.6872 20.9854 30.226C16.5413 27.1126 13.314 23.6875 11.119 19.7553C10.7489 19.0913 10.8524 18.2726 11.3762 17.7179L13.7117 15.2478C14.5825 14.3258 14.7866 12.9445 14.2197 11.8105L10.2895 3.95016C9.85166 3.07336 9.04756 2.46937 8.08344 2.29297C7.1187 2.11623 6.1523 2.39683 5.43168 3.06224L3.93899 4.44128C2.28898 5.96547 1.19702 7.93659 0.78124 10.1413C0.364669 12.3497 0.667845 14.5775 1.65787 16.5845C1.66224 16.5938 1.66636 16.6018 1.66977 16.6085C2.29712 17.8772 2.97548 19.1178 3.68473 20.2938C3.80311 20.4917 3.93077 20.7008 4.06394 20.9155C4.25512 21.2233 4.65961 21.318 4.9676 21.1269C5.2755 20.9357 5.37017 20.5311 5.17908 20.2232C5.04967 20.0147 4.92578 19.8117 4.80984 19.618C4.11897 18.4724 3.45907 17.2656 2.84843 16.0312C2.84502 16.024 2.84152 16.017 2.83793 16.01C1.11285 12.5195 1.88361 8.23661 4.70249 5.52763L10.6205 16.607L10.4223 16.8166C9.50281 17.7899 9.32213 19.2278 9.97284 20.3948C12.2666 24.5041 15.6224 28.0715 20.2324 31.3011C20.7616 31.6716 21.3728 31.8545 21.9818 31.8545C22.7034 31.8545 23.4219 31.5976 23.997 31.0918L24.6373 30.5286L35.4657 36.6215L35.4547 36.632C32.6636 39.3136 28.4824 39.9239 25.0506 38.1505C17.612 34.3056 11.5649 29.2229 7.07732 23.0441C6.86426 22.7508 6.4539 22.6856 6.1607 22.8988C5.86741 23.1118 5.8024 23.5221 6.01537 23.8154C10.6243 30.1613 16.8259 35.3767 24.4478 39.3167C25.9481 40.0919 27.5728 40.4696 29.1867 40.4696C31.8016 40.4696 34.3874 39.4776 36.3637 37.5788L37.7938 36.2057C38.507 35.5198 38.843 34.5665 38.7175 33.5871C38.7162 33.5746 38.7146 33.5623 38.7127 33.5499ZM5.69697 4.60393L6.32222 4.02637C6.7366 3.64375 7.29221 3.48266 7.8472 3.58399C8.4014 3.68539 8.86365 4.03258 9.11546 4.53691L13.0458 12.3976C13.3673 13.0405 13.2514 13.8238 12.7578 14.3464L11.5712 15.6014L5.69697 4.60393Z"
+                                    fill="#121212"
+                                    stroke="#121212"
+                                    stroke-width="0.4"
+                                />
+                                <path
+                                    d="M40.4859 11.7923C40.4859 10.5283 39.4576 9.5 38.1936 9.5C36.9297 9.5 35.9014 10.5283 35.9014 11.7923C35.9014 13.0562 36.9297 14.0846 38.1936 14.0846C39.4576 14.0846 40.4859 13.0562 40.4859 11.7923ZM37.2137 11.7923C37.2137 11.252 37.6532 10.8124 38.1935 10.8124C38.7338 10.8124 39.1734 11.252 39.1734 11.7923C39.1734 12.3326 38.7338 12.7721 38.1935 12.7721C37.6532 12.7721 37.2137 12.3326 37.2137 11.7923Z"
+                                    fill="#121212"
+                                />
+                                <path
+                                    d="M34.4088 11.7923C34.4088 10.5283 33.3804 9.5 32.1165 9.5C30.8526 9.5 29.8242 10.5283 29.8242 11.7923C29.8242 13.0562 30.8526 14.0846 32.1165 14.0846C33.3804 14.0846 34.4088 13.0562 34.4088 11.7923ZM31.1366 11.7923C31.1366 11.252 31.5762 10.8124 32.1165 10.8124C32.6567 10.8124 33.0962 11.252 33.0962 11.7923C33.0962 12.3326 32.6567 12.7721 32.1165 12.7721C31.5762 12.7721 31.1366 12.3326 31.1366 11.7923Z"
+                                    fill="#121212"
+                                />
+                                <path
+                                    d="M23.7471 11.7923C23.7471 13.0562 24.7753 14.0846 26.0394 14.0846C27.3035 14.0846 28.3317 13.0562 28.3317 11.7923C28.3317 10.5283 27.3034 9.5 26.0394 9.5C24.7754 9.5 23.7471 10.5283 23.7471 11.7923ZM26.0394 10.8124C26.5797 10.8124 27.0193 11.252 27.0193 11.7923C27.0193 12.3326 26.5797 12.7721 26.0394 12.7721C25.4991 12.7721 25.0596 12.3326 25.0596 11.7923C25.0596 11.252 25.4991 10.8124 26.0394 10.8124Z"
+                                    fill="#121212"
+                                />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold md:text-base">
+                                Hỗ trợ 24/7
+                            </p>
+                            <p class="text-xs text-black/70 md:text-sm">
+                                Đội ngủ hỗ trợ tận tâm
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 04 -->
+                    <div class="flex items-center gap-x-5">
+                        <div>
+                            <svg
+                                width="46"
+                                height="36"
+                                viewBox="0 0 46 36"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M44.8607 3.87938C44.2733 3.18369 43.4508 2.75875 42.5444 2.6829L10.6202 0.0121079C9.71369 -0.0637419 8.83235 0.218632 8.13792 0.807066C7.44633 1.39319 7.02283 2.21317 6.94474 3.11689L6.30246 9.15435H3.73786C1.86043 9.15435 0.333008 10.6847 0.333008 12.5658V32.5885C0.333008 34.4696 1.86043 36 3.73786 36H35.7733C37.6508 36 39.1782 34.4696 39.1782 32.5885V29.3405L40.315 29.4356C40.4109 29.4436 40.5062 29.4476 40.6008 29.4476C42.3511 29.4476 43.8432 28.0983 43.9914 26.3198L45.6543 6.36654C45.7299 5.45838 45.4481 4.57516 44.8607 3.87938ZM3.73786 10.9286H35.7733C36.6742 10.9286 37.4074 11.6631 37.4074 12.5658V14.3903H2.10383V12.5658C2.10383 11.6631 2.83687 10.9286 3.73786 10.9286ZM2.10383 16.1645H37.4074V19.8452H2.10383V16.1645ZM35.7733 34.2257H3.73786C2.83687 34.2257 2.10383 33.4913 2.10383 32.5885V21.6194H37.4074V32.5885C37.4074 33.4913 36.6742 34.2257 35.7733 34.2257ZM43.8896 6.21883L42.2267 26.1721C42.1517 27.0717 41.36 27.7429 40.4623 27.6674L39.1782 27.56V12.5658C39.1782 10.6847 37.6508 9.15435 35.7733 9.15435H8.08338L8.70662 3.29573C8.70733 3.28899 8.70795 3.28234 8.70848 3.27551C8.78348 2.37587 9.57468 1.70484 10.4728 1.78025L42.3971 4.45105C42.8321 4.48742 43.2269 4.69137 43.5087 5.02529C43.7906 5.3592 43.9259 5.78298 43.8896 6.21883Z"
+                                    fill="#121212"
+                                />
+                                <path
+                                    d="M33.7027 24.2578H25.1813C24.6923 24.2578 24.2959 24.655 24.2959 25.1449V30.7152C24.2959 31.2051 24.6923 31.6023 25.1813 31.6023H33.7027C34.1918 31.6023 34.5882 31.2051 34.5882 30.7152V25.1449C34.5882 24.655 34.1918 24.2578 33.7027 24.2578ZM32.8173 29.828H26.0667V26.0321H32.8173V29.828Z"
+                                    fill="#121212"
+                                />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold md:text-base">
+                                Thanh toán linh hoạt
+                            </p>
+                            <p class="text-xs text-black/70 md:text-sm">
+                                Nhiều phương thức thanh toán tiện lợi
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="py-10">
+            <hr />
+        </div>
+
+        <footer class=""></footer>
+    </body>
+</html>
